@@ -1,0 +1,505 @@
+html *{
+	word-wrap: break-word;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	font-family: 'Kaushan Script';
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30pt;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+ul{
+	display: inline-block;
+}
+hr{
+	vertical-align: middle;
+	border-width: 0;
+	border-bottom-width: 3px;
+	border-color: #f38181;
+	width: 60px;
+	margin: auto;
+}
+p{
+	color: #999999;
+}
+body>div:not(:first-of-type){
+	padding: 0 18.75%;
+}
+/* banner */
+nav *{
+	display: inline-block;
+}
+#banner{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("images/bannerbackground.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+#banner a{
+	color: white;
+	transition-duration: 0.1s;
+}
+#banner a:hover{
+	border-bottom: 3px solid #fce38a;
+	color: #fce38a;
+	transition-duration: 0.1s;
+}
+nav{
+	padding-top: 20px;
+}
+nav > li{
+	float: right;
+	margin-right: 360px;
+}
+nav > li > ul{
+	font-size: 14pt;
+	margin-right: 58px;
+}
+nav > span{
+	font-size: 30pt;
+}
+#banner h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 72pt;
+}
+#banner h2{
+	font-family: 'Montserrat', bold;
+	text-align: center;
+	font-size: 150pt;
+	line-height: 140pt;
+	width: 60%;
+	margin: auto;
+	margin-top: 64px;
+}
+#banner button{
+	background-color: transparent;
+	color: white;
+	width: 160px;
+	height: 40px;
+	border: 3px solid #fff;
+	cursor: pointer;
+	font-size: 14pt;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 230px;
+}
+#banner div{
+	text-align: center;
+}
+#banner hr{
+	border-color: white;
+	width: 60px;
+	margin: auto;
+	margin-top: 72px;
+	margin-bottom: 50px;
+}
+/* about us */
+#aboutus{
+	text-align: center;
+	height: 750px;
+	padding-top: 100px;
+}
+#aboutus h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24pt;
+}
+#aboutus h2{
+	margin-top: 20px;
+}
+#aboutus hr{
+	margin-top: 40px;
+}
+#aboutus p{
+	font-family: Roboto;
+	font-size: 15pt;
+	margin-top: 50px;
+	color: #a5a5a5;
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+}
+#pics{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 110px;
+}
+#pics > img{
+	width: 30%;
+}
+/* facts */
+#facts{
+	text-align: center;
+	color: white;
+	height: 270px;
+	background-color: #aee0d2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 72pt;
+	font-weight: bold;
+}
+#facts > div:first-of-type{
+	border-left: 1px solid #c6e9e0;
+}
+#facts > div{
+	border-right: 1px solid #c6e9e0;
+	width: 20%;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#facts span{
+	font-size: 14pt;
+	font-weight: 400;
+}
+/* service */
+#service hr:first-of-type{
+	margin-top: 43px;
+	margin-bottom: 65px;
+}
+#service{
+	margin-top: 110px;
+	height: 650px;
+	text-align: center;
+}
+#service div{
+	text-align: left;}
+#service > div{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20%;
+	margin-right: 20%;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+#service > div > div{
+	display: flex;
+	width: 30%;
+	height: 160px;
+}
+#service img{
+	margin-right: 5%;
+	padding-top: 2%;
+	height: 30px; 
+	width: 30px;
+	flex-shrink: 0;
+}
+/* feature */
+#feature {
+	position: relative;
+	text-align: center;
+	background-image: url("images/Layer 45.png");
+	height: 850px;
+	background-size: cover;
+	padding-top: 110px;
+}
+#feature hr {
+	margin-top: 37px;
+	margin-bottom: 45px;
+}
+#ipad{
+	height: 582px;
+	width: 475px;
+	position: absolute;
+	bottom: 0px;
+	transform: translate(-60%);
+	z-index: 0;
+}
+#iphone{
+
+	position: absolute;
+	bottom: 0px;
+	transform: translate(50%, 50px);
+	z-index: 1;
+}
+
+/* service2 */
+#service2 > *{
+	vertical-align: middle;
+	}
+#service2{
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 111px;
+	padding-bottom: 120px;
+}
+#service2 > h2{
+	margin-top: 24px;
+	margin-bottom: 42px;
+}
+#service2 > hr{
+	margin-bottom: 45px;
+}
+#service2 > p{
+	width: 50%;
+	margin: auto;
+	margin-bottom: 95px;
+}
+#rolloutcontainer{
+	vertical-align: middle;
+	width: 570px;
+	height: 380px;
+	display: inline-block;
+	margin-left: 30px;
+}
+div.rollout:not(:last-of-type){
+	margin-bottom: 1%;
+}
+div.rollout{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 0 5%;
+	margin: auto;
+	height: 15%;
+	border: 2px solid #e5e5e5;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 14pt;
+	cursor: pointer;
+}
+p.rollout{
+	text-align: left;
+	display: none;
+}
+.rollout img:first-of-type{
+	height: 30px;
+	width: 30px;
+	margin-right: 2%;
+}
+.rollout img:last-of-type{
+	margin-left: auto;
+	transition-duration: 0.3s;
+}
+/* quote */
+#quote{
+	height: 290px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	background-color: #f8f8f8;
+}
+#quote > div{
+	width: 50%;
+}
+#quote > div > hr{
+	display: inline-block;
+}
+#quote > img:first-of-type{
+	transform: rotate(90deg);
+	cursor: pointer;
+}
+#quote > img:last-of-type{
+	transform: rotate(-90deg);
+	cursor: pointer;
+}
+/* ourteam */
+#ourteam{
+	min-height: 1050px;
+	padding-top: 100px;
+	text-align: center;
+}
+#ourteam h1{
+	margin-bottom: 20px;
+}
+#ourteam h2{
+	margin-bottom: 40px;
+}
+#ourteam > p{
+	width: 50%;
+  	margin: auto;
+  	position: relative;
+  	margin-bottom: 90px;
+}
+#ourteam hr{
+  	margin-bottom: 45px;
+}
+.membercard{
+	display: inline-flex;
+	flex-direction: column;
+	width: 30%;
+}
+.membercard>:not(:last-child){
+	margin-bottom: 30px;
+}
+.membercard:not(:last-of-type){
+	margin-right: 30px;
+}
+/* logos */
+#logos{
+	background-color: #f8f8f8;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center; 
+}
+#logos img{
+	width: 100%;
+	margin: auto;
+}
+/* what we do div#work */
+#work{
+	text-align: center;
+	height: 1630px;
+	padding: 110px 0 130px;
+}
+#work h1{
+	margin-bottom: 20px;
+}
+#work h2{
+	margin-bottom: 40px;
+}
+#work hr{
+  	margin-bottom: 45px;
+}
+#work > p{
+	width: 50%;
+	margin: auto;
+}
+/* testimonial */
+#testimonial{
+	height: 440px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+}
+#testimonial > div{
+	width: 50%;
+}
+#testimonial > div > hr{
+	display: inline-block;
+}
+#testimonial > img:first-of-type{
+	transform: rotate(90deg);
+	cursor: pointer;
+}
+#testimonial > img:last-of-type{
+	transform: rotate(-90deg);
+	cursor: pointer;
+}
+/* wps */
+#wps{
+	text-align: center;
+	background-image: url(images/wpsbackground.png);
+	min-height: 830px;
+	padding-top: 110px;
+	padding-bottom: 130px;
+}
+#wps>h2{
+	margin-top: 20px;
+}
+#wps>hr{
+	margin-top: 42px;
+	margin-bottom: 90px;
+}
+div#personscontainer{
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-around;
+	margin:auto;
+}
+div.person{
+	width: 45%;
+	text-align: left;
+}
+div.person>img{
+	float: left;
+}
+div.person>div{
+	width: 70%;
+	float: right;
+}
+div.person hr{
+	margin: 5px 0px;
+}
+/* blog */
+div#blog{
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+div#blog h2{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+div#blog hr{
+	margin-bottom: 45px;
+}
+div.blogcontainer{
+	display: flex;
+}
+div.blog div{
+	background-color: #95e1d3;
+	color: white;
+	width: 60px;
+	height: 70px;
+}
+/* map */
+div#map{
+	cursor: pointer;
+	height: 200px;
+	background-image: url('images/mapbackground.png');
+	text-align: center;
+	padding: 55px 18.75%;
+}
+div#map img{
+	display: block;
+	margin: auto;
+}
+div#map span{
+	font-weight: bold;
+	display: block;
+	color: #f38181;
+	margin-top: 17px;
+	margin-bottom: 22px;
+}
+/* footer */
+footer{
+	padding: 0 18.75%;
+	display: flex;
+	padding-top: 75px;
+	padding-bottom: 70px;
+	height: 355px;
+}
+footer>div:not(:last-of-type){
+	margin-right: 5px;
+}
+div.first{
+	width: 26%;
+}
+/* end */
+div.end{
+	text-align: center;
+}
+div.end a{
+	text-decoration: none;
+	color: #f4a4a4;
+}
+div.end hr{
+	border-bottom-width: 1px;
+	width: unset;
+}
+div.end span{
+	display: block;
+	margin:24px 0;
+}
