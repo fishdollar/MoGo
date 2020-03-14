@@ -33,21 +33,18 @@ hr{
 p{
 	color: #999999;
 }
-body>div:not(:first-of-type){
-	padding: 0 18.75%;
+body>div:not(:first-child){
+	padding: 0 15%;
 }
 /* banner */
-nav *{
-	display: inline-block;
-}
 #banner{
 	min-height: 100vh;
-	width: 100%;
 	background-image: url("images/bannerbackground.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
 	text-align: center;
+	padding-bottom: 20px;
 }
 #banner a{
 	color: white;
@@ -60,14 +57,16 @@ nav *{
 }
 nav{
 	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-nav > li{
-	float: right;
-	margin-right: 360px;
+nav>li>ul:not(:last-child){
+	margin-right: 20px;
 }
-nav > li > ul{
-	font-size: 14pt;
-	margin-right: 58px;
+nav>li>ul img{
+	width: 18px;
+	height: 18px;
 }
 nav > span{
 	font-size: 30pt;
@@ -80,10 +79,8 @@ nav > span{
 	font-family: 'Montserrat', bold;
 	text-align: center;
 	font-size: 150pt;
-	line-height: 140pt;
-	width: 60%;
 	margin: auto;
-	margin-top: 64px;
+	line-height: 150pt;
 }
 #banner button{
 	background-color: transparent;
@@ -94,8 +91,6 @@ nav > span{
 	cursor: pointer;
 	font-size: 14pt;
 	font-weight: bold;
-	margin-top: 50px;
-	margin-bottom: 230px;
 }
 #banner div{
 	text-align: center;
@@ -110,8 +105,8 @@ nav > span{
 /* about us */
 #aboutus{
 	text-align: center;
-	height: 750px;
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 #aboutus h1{
 	font-family: 'Kaushan Script', cursive;
@@ -136,7 +131,6 @@ nav > span{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 100px;
-	margin-bottom: 110px;
 }
 #pics > img{
 	width: 30%;
@@ -183,8 +177,6 @@ nav > span{
 #service > div{
 	display: flex;
 	justify-content: space-between;
-	margin-left: 20%;
-	margin-right: 20%;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
@@ -350,8 +342,8 @@ p.rollout{
 	text-align: center; 
 }
 #logos img{
-	width: 100%;
 	margin: auto;
+	width: 100%;
 }
 /* what we do div#work */
 #work{
@@ -419,7 +411,7 @@ div#personscontainer{
 	margin:auto;
 }
 div.person{
-	width: 45%;
+	width: 50%;
 	text-align: left;
 }
 div.person>img{
@@ -460,7 +452,7 @@ div#map{
 	height: 200px;
 	background-image: url('images/mapbackground.png');
 	text-align: center;
-	padding: 55px 18.75%;
+	padding: 55px 15%;
 }
 div#map img{
 	display: block;
@@ -475,11 +467,10 @@ div#map span{
 }
 /* footer */
 footer{
-	padding: 0 18.75%;
+	padding: 0 15%;
 	display: flex;
 	padding-top: 75px;
 	padding-bottom: 70px;
-	height: 355px;
 }
 footer>div:not(:last-of-type){
 	margin-right: 5px;
