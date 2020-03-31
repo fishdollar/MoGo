@@ -42,6 +42,7 @@ body>div:not(:first-child){
 	background-image: url("images/bannerbackground.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 	color: white;
 	text-align: center;
 	padding-bottom: 20px;
@@ -179,6 +180,7 @@ nav > span{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-items: flex-start;
 }
 #service > div > div{
 	display: flex;
@@ -187,9 +189,7 @@ nav > span{
 }
 #service img{
 	margin-right: 5%;
-	padding-top: 2%;
 	height: 30px; 
-	width: 30px;
 	flex-shrink: 0;
 }
 /* feature */
@@ -223,7 +223,7 @@ nav > span{
 
 /* service2 */
 #service2 > *{
-	vertical-align: middle;
+	vertical-align: top;
 	}
 #service2{
 	vertical-align: middle;
@@ -250,17 +250,23 @@ nav > span{
 	display: inline-block;
 	margin-left: 30px;
 }
-div.rollout:not(:last-of-type){
-	margin-bottom: 1%;
+#rolloutcontainer > *{
+	border: 2px solid #e5e5e5;
+}
+#rolloutcontainer > *:not(:last-of-type){
+	border-bottom: unset;
+}
+#rolloutcontainer > *:last-child{
+	border-top: unset;
 }
 div.rollout{
+	margin-top: 1%;
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	padding: 0 5%;
 	margin: auto;
 	height: 15%;
-	border: 2px solid #e5e5e5;
 	text-align: left;
 	vertical-align: middle;
 	font-size: 14pt;
@@ -268,7 +274,7 @@ div.rollout{
 }
 p.rollout{
 	text-align: left;
-	display: none;
+	display: none;	
 }
 .rollout img:first-of-type{
 	height: 30px;
@@ -328,6 +334,10 @@ p.rollout{
 	flex-direction: column;
 	width: 30%;
 }
+.membercard > img{
+	width: 100%;
+	height: auto;
+}
 .membercard>:not(:last-child){
 	margin-bottom: 30px;
 }
@@ -345,11 +355,40 @@ p.rollout{
 	margin: auto;
 	width: 100%;
 }
-/* what we do div#work */
+/* work */
+#piccontainer{
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 100px;
+}
+.gridCell{
+	position: relative;
+}
+.gridCell>img{
+	display: block;
+	width: 100%;
+}
+.gridHover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.gridHover:hover{
+	background: linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+}
+#piccontainer>div:nth-child(3){
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+/* what we do */
 #work{
 	text-align: center;
-	height: 1630px;
-	padding: 110px 0 130px;
+	padding: 110px 0 0;
 }
 #work h1{
 	margin-bottom: 20px;
@@ -390,6 +429,7 @@ p.rollout{
 #wps{
 	text-align: center;
 	background-image: url(images/wpsbackground.png);
+	background-size: cover;
 	min-height: 830px;
 	padding-top: 110px;
 	padding-bottom: 130px;
@@ -402,19 +442,21 @@ p.rollout{
 	margin-bottom: 90px;
 }
 div#personscontainer{
-	height: 300px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: space-between;
 	justify-content: space-around;
 	margin:auto;
+	min-height: 300px;
 }
 div.person{
-	width: 50%;
+	width: 40%;
 	text-align: left;
 }
 div.person>img{
+	max-width: 100px;
+	width: 20%;
 	float: left;
 }
 div.person>div{
@@ -439,12 +481,16 @@ div#blog hr{
 }
 div.blogcontainer{
 	display: flex;
+	justify-content: center;
 }
 div.blog div{
 	background-color: #95e1d3;
 	color: white;
 	width: 60px;
 	height: 70px;
+}
+div.blog>img:first-child{
+	width: 100%;
 }
 /* map */
 div#map{
@@ -453,10 +499,6 @@ div#map{
 	background-image: url('images/mapbackground.png');
 	text-align: center;
 	padding: 55px 15%;
-}
-div#map img{
-	display: block;
-	margin: auto;
 }
 div#map span{
 	font-weight: bold;
@@ -476,7 +518,19 @@ footer>div:not(:last-of-type){
 	margin-right: 5px;
 }
 div.first{
-	width: 26%;
+	width: 40%;
+}
+div.first{
+	width: 40%;
+}
+div.blogs{
+	width: 35%;
+}
+div.instagram{
+	width: 22.5%;
+}
+div.instagram > img {
+    width: 32%;
 }
 /* end */
 div.end{
