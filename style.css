@@ -222,9 +222,6 @@ nav > span{
 }
 
 /* service2 */
-#service2 > *{
-	vertical-align: top;
-	}
 #service2{
 	vertical-align: middle;
 	text-align: center;
@@ -243,15 +240,21 @@ nav > span{
 	margin: auto;
 	margin-bottom: 95px;
 }
+.container > img{
+	width: 50%;
+	height: 100%;
+}
+#service2>div.container{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
 #rolloutcontainer{
-	vertical-align: middle;
-	width: 570px;
-	height: 380px;
-	display: inline-block;
-	margin-left: 30px;
+	padding-left: 1%;
+	width: 50%;
 }
 #rolloutcontainer > *{
-	border: 2px solid #e5e5e5;
+	border: 1px solid #e5e5e5;
 }
 #rolloutcontainer > *:not(:last-of-type){
 	border-bottom: unset;
@@ -260,21 +263,21 @@ nav > span{
 	border-top: unset;
 }
 div.rollout{
-	margin-top: 1%;
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	padding: 0 5%;
-	margin: auto;
 	height: 15%;
 	text-align: left;
-	vertical-align: middle;
 	font-size: 14pt;
 	cursor: pointer;
 }
 p.rollout{
 	text-align: left;
 	display: none;	
+	padding: 5px;
+	max-height: 55%;
+	overflow-x: auto;
 }
 .rollout img:first-of-type{
 	height: 30px;
@@ -310,7 +313,7 @@ p.rollout{
 }
 /* ourteam */
 #ourteam{
-	min-height: 1050px;
+	padding-bottom: 100px;
 	padding-top: 100px;
 	text-align: center;
 }
@@ -375,6 +378,17 @@ p.rollout{
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: none;
+}
+.gridHover>*{
+	color: white;
+	margin-top: 3%;
+}
+.gridCell:hover .gridHover{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
 }
 .gridHover:hover{
 	background: linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
@@ -481,16 +495,23 @@ div#blog hr{
 }
 div.blogcontainer{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+}
+div.blog{
+	position: relative;
+	width: 30%;
 }
 div.blog div{
 	background-color: #95e1d3;
 	color: white;
 	width: 60px;
 	height: 70px;
+	transform: translate(0, -100%);
+	position: absolute;
 }
 div.blog>img:first-child{
 	width: 100%;
+	display: block;
 }
 /* map */
 div#map{
@@ -513,12 +534,6 @@ footer{
 	display: flex;
 	padding-top: 75px;
 	padding-bottom: 70px;
-}
-footer>div:not(:last-of-type){
-	margin-right: 5px;
-}
-div.first{
-	width: 40%;
 }
 div.first{
 	width: 40%;
